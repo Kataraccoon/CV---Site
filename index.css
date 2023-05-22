@@ -1,0 +1,343 @@
+/* TODO fix 100vh */
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sideMenuContainer{
+    background-color: black;
+    height: 600px;
+    width: 50px;
+}
+
+.photoContainer{
+    background-image: url("Ava.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 344px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.infoContainer{
+    background-color: rgb(29,30,32);
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.centralButtonWrapper{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.button a{
+    color: white;
+}
+.button:hover{
+    font-size: 24px;
+}
+.button:active{
+    transform: translateY(2px);
+    
+}
+.buttonActive{
+    color: rgb(3,189,126);
+  }
+  .buttonActive a{
+    color: rgb(3,189,126)
+  }
+
+.mainMenuButtonContainer{
+    background-color: rgb(3,189,126);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainMenuButton img{
+    width: 20px;
+    height: 20px;
+}
+
+.buttonBottom{
+    height: 50px;
+}
+
+.fullName{
+    font-size: 42px;
+    font-weight: 700;
+    padding-bottom: 8px;
+    color: white;
+}
+
+.title{
+padding-bottom: 12px;
+color: rgb(3,189,126);
+
+}
+.socialMediaContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    height: 20px;
+    align-items: center;
+}
+.socialMediaIcon{
+color: white;
+cursor: pointer;
+}
+
+.socialMediaIcon:hover{
+font-size: 24px;
+}
+
+.commonInfocontainer{
+    padding: 28px;
+    
+}
+
+.header{
+    color: white;
+    font-size: 54px;
+    margin: 0;
+}
+ .smallDescription{
+    color: rgb(3,189,126);
+    font-size: 16px;
+ }
+
+.fullDescription{
+}
+.myServicesContainer{
+    padding: 28px;
+}
+.myServicesTitle{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+.serviceCard{
+padding-top: 20px;
+height: 120px;
+width: 178px;
+height: 170px;
+}
+.serviceCardIcon{
+    width: 28px;
+    height: 28px;
+    filter: invert(1);
+}
+.serviceCardTitle{
+color: white;
+margin: 0;
+font-size: 16px;
+line-height: 24px;
+font-weight: 700;
+}
+.serviceCardDescription{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    font-size: 12px;
+}
+.servicesWrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+hr{
+    width: 90%;
+}
+
+.descriptionText{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* width */ 
+.infoContainer::-webkit-scrollbar { 
+    width: 6px; 
+} 
+    
+  /* Handle */ 
+.infoContainer::-webkit-scrollbar-thumb { 
+    background: rgba(132,118,129, 0.7);  
+    border-radius: 10px; 
+} 
+   
+  /* Handle on hover */ 
+.infoContainer::-webkit-scrollbar-thumb:hover { 
+    background: rgb(132,118,129, 0.5);  
+}
+  
+  .fa-phone{
+    color: white;
+}
+
+  .contactsContainer{
+    color: white;
+    padding: 28px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+.requestContainer{
+    padding: 28px;
+}
+
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputField{
+border-radius: 8px;
+padding: 10px;
+}
+
+.inputButton{
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+
+}
+.inputButton:hover{
+    background-color: rgb(192, 192, 192);
+}
+.portfolioContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 24px;
+    flex-wrap: wrap;
+}
+.portfolioCard{
+    width: 160px;
+    height: 160px;
+    transition: 1s;
+    overflow: hidden;
+}
+.portfolioCard:hover{
+    border-radius: 50%;
+}
+.portfolioCard img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.portfolioCard:hover img {
+    transform: scale(1.2);
+}
+
+
+/* Mobile Design */
+@media screen and (orientation: portrait) { 
+    body { 
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100vh;
+    } 
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .sideMenuContainer{
+        background-color: rgb(29, 30, 32);
+        height: auto;
+        width: 100%;
+    }
+    .centralButtonWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .button{
+        width: 100px;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s;
+        font-size: 50px;
+    }
+    .button a{
+        color: white;
+    
+    }
+    .button:hover{
+        font-size: 64px;
+    }
+    .button:active{
+        transform: translateY(2px);
+        
+    }
+    .buttonActive{
+        color: rgb(3,189,126);
+      }
+      .photoContainer{
+        background-image: url("avatar.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 24px;
+        height: 800px;
+    }
+    .infoContainer{
+        background-color: rgb(29,30,32);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        height: auto;
+    }
+  }
